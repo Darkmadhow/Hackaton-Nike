@@ -6,21 +6,148 @@
 
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: #111;
 }
 
+/*---------- Links ----------*/
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: #757575;
+}
+
+/*---------- Buttons ----------*/
+.buttonlight {
+    border-radius: 2em;
+    padding: 0.3em 1.2em;
+    background-color: white;
+    color: #111;
+}
+.buttonlight:hover{
+    background-color: #757575;
+}
+.buttondark{
+    border-radius: 2em;
+    padding: 0.3em 1.2em;
+    background-color: #111;
+    color: white;
+}
+.buttondark:hover{
+    background-color: #757575;
+}
+
+/*---------- Top Navigation Header ----------*/
 header {
     display: flex;
     flex-direction: column;
 }
 
 .nav1 {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 0.5rem 2rem;
+    background-color: #f5f5f5;
+}
+.nav1 .icons {
+    display: flex;
+    justify-content: space-between;
+}
+.nav1 .links{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .nav2 {
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
 .nav3 {
-    
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.nav3 p{
+    font-size: 12px;
+}
+.nav3 a{
+    text-decoration: underline;
+}
+
+/*---------- Sportstyles Section ----------*/
+.sportstyles{
+    width: 100vw;
+    background-image: url("/img/Section1_background.webp");
+    overflow: scroll;
+}
+.sportstyles h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48;
+    font-weight: 500;
+}
+
+
+/*---------- To The Max Section ----------*/
+.tothemax .contentText{
+    font-size: 20px;
+}
+.tothemax h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+/*---------- Video Section ----------*/
+.video {
+    width: 100vw;
+    height: 66vh;
+    margin-bottom: 1rem;
+}
+
+/*---------- Schuhslider Section ----------*/
+.shoeSlider1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.shoeSlider1 img{
+    margin-right: 1rem;
+}
+
+/*---------- Exklusiv App Section ----------*/
+.exclusive h1{
+    font-size: 24px;
+}
+.exclusive .imgSlider{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding-left: 1rem;
+}
+.exclusive figure{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.exclusive .shoeType {
+    color: #757575;
+}
+
+/*---------- Discover Section ----------*/
+.discover h1{
+    font-size: 24px;
+}
+.discover .imgSlider{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+.discover img{
+    margin: 1rem;
 }
