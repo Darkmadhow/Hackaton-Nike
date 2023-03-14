@@ -312,3 +312,12 @@ nav ul li{
 }
 
 /*---------- Bottom Nav ----------*/
+/*---------- Footer ----------*/
+footer {
+    background-color: #111;
+}
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+    
