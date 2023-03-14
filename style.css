@@ -209,7 +209,38 @@ nav ul li{
 }
 
 /*---------- Exklusiv App Section ----------*/
+.exclusive {
+    margin-top: 2rem;
+}
+.exclusiveHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+.sliderButtonExclusiveLeft {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    background-image: url("img/left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+}
+.sliderButtonExclusiveRight {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    background-image: url("img/right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .exclusive h1{
+    font-weight: normal;
     font-size: 24px;
 }
 .exclusive .imgSlider{
@@ -219,11 +250,12 @@ nav ul li{
     padding-left: 1rem;
 }
 .exclusive figure{
+    width: 33%;
     margin: 1rem;
     display: flex;
     flex-direction: column;
 }
-.exclusive .shoeType {
+.shoeType {
     color: #757575;
 }
 
@@ -239,3 +271,44 @@ nav ul li{
 .discover img{
     margin: 1rem;
 }
+
+/*---------- Sportart Section ----------*/
+.sports h1{
+    font-size: 24px;
+}
+.sports .imgSlider{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+.sports img{
+    margin: 1rem;
+}
+
+/*---------- Monat Air Section ----------*/
+.air h1{
+    font-size: 24px;
+}
+.air .imgSlider{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+.air img{
+    margin: 1rem;
+}
+
+/*---------- Membership Section ----------*/
+.membership h1{
+    font-size: 24px;
+}
+.membership .imgSlider{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+}
+.membership img{
+    margin: 1rem;
+}
+
+/*---------- Bottom Nav ----------*/
