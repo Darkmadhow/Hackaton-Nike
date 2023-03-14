@@ -12,6 +12,7 @@ body {
 
 /*---------- Links ----------*/
 a{
+    color:#111;
     text-decoration: none;
 }
 a:hover {
@@ -19,22 +20,28 @@ a:hover {
 }
 
 /*---------- Buttons ----------*/
-.buttonlight {
+.buttonLight {
+    font-size: 16px;
+    border: none;
     border-radius: 2em;
     padding: 0.3em 1.2em;
     background-color: white;
     color: #111;
+    margin: 1rem 0;
 }
-.buttonlight:hover{
+.buttonLight:hover{
     background-color: #757575;
 }
-.buttondark{
+.buttonDark{
+    font-size: 16px;
+    border: none;
     border-radius: 2em;
-    padding: 0.3em 1.2em;
+    padding: 0.5em 1.2em;
     background-color: #111;
     color: white;
+    margin: 1rem 0;
 }
-.buttondark:hover{
+.buttonDark:hover{
     background-color: #757575;
 }
 
@@ -42,6 +49,13 @@ a:hover {
 header {
     display: flex;
     flex-direction: column;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 1rem;
 }
 
 .nav1 {
@@ -52,9 +66,8 @@ header {
     padding: 0.5rem 2rem;
     background-color: #f5f5f5;
 }
-.nav1 .icons {
-    display: flex;
-    justify-content: space-between;
+.nav1 .nav1Icon {
+    margin-right: 1rem;
 }
 .nav1 .links{
     display: flex;
@@ -64,16 +77,50 @@ header {
 
 .nav2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
+}
+.nav2 div {
+    display: flex;
+    align-items: center;
+}
+.nav2 input {
+    border: none;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+}
+.nav2 input:hover {
+    background-color: #e5e5e5;
+}
+.nikeIcon {
+    width: 5rem;
+    height: 5rem;
+}
+.nav2Button {
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.3rem;
+    align-self: center;
+    margin-left: 1rem;
+}
+.nav2Button:hover {
+    background-color: #e5e5e5;
 }
 
 .nav3 {
     text-align: center;
     background-color: #f5f5f5;
+    padding: 0.5rem;
+}
+.nav3 h3{
+    font-size: 16px;
+    font-weight: normal;
 }
 .nav3 p{
+    margin: 0.3rem;
     font-size: 12px;
 }
 .nav3 a{
@@ -82,18 +129,28 @@ header {
 
 /*---------- Sportstyles Section ----------*/
 .sportstyles{
-    width: 100vw;
-    background-image: url("/img/Section1_background.webp");
-    overflow: scroll;
+    padding: 2rem;
+    width: 99vw;
+    background-image: url("img/Section1_background.webp");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sportstyles h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 48;
+    font-size: 48px;
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 
 /*---------- To The Max Section ----------*/
+.tothemax{
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .tothemax .contentText{
     font-size: 20px;
 }
@@ -101,23 +158,54 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 72px;
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 /*---------- Video Section ----------*/
-.video {
+.video img{
     width: 100vw;
-    height: 66vh;
     margin-bottom: 1rem;
 }
 
 /*---------- Schuhslider Section ----------*/
 .shoeSlider1 {
+    position: relative;
+}
+.shoeSlider1 .imgSlider{
+    width: 100vw;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     overflow: hidden;
 }
 .shoeSlider1 img{
     margin-right: 1rem;
+}
+.sliderButtonLeft {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    top: 50%;
+    left: 7%;
+    background-image: url("img/left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sliderButtonRight {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    top: 50%;
+    left: 93%;
+    background-image: url("img/right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*---------- Exklusiv App Section ----------*/
