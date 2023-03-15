@@ -381,7 +381,9 @@ nav ul li{
 /*---------- Bottom Nav ----------*/
 /*---------- Footer ----------*/
 footer {
+    display:flex;
     background-color: #111;
+    padding: 2em 0;
 }
 footer nav {
     display: flex;
