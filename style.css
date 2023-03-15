@@ -379,6 +379,34 @@ nav ul li{
 }
 
 /*---------- Bottom Nav ----------*/
+
+.bottomNav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;    
+}
+
+.bottomNav ul {
+    display: block;
+}
+
+.bottomNav li {
+    margin-top: 1rem;
+}
+
+.bottomNav p {
+    margin-bottom: 2rem;
+}
+
+.bottomNav ul a {
+    color:#7e7e7e;
+
+}
+
+.bottomNav ul a:hover {
+    color:#111;
+}
+
 /*---------- Footer ----------*/
 footer {
     display:flex;
@@ -419,7 +447,7 @@ footer nav {
 
 .footerNav1 a {
     color:white;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     
 }
 
@@ -435,6 +463,10 @@ footer nav {
 .footerLogos {
     display:flex;
     justify-content: flex-end;
+}
+
+.footerLogos a:hover {
+    opacity: 0.7;
 }
 
 footer a {
@@ -459,9 +491,33 @@ footer a {
     display: flex;
     color: white;
     justify-content: space-evenly;
+    font-size: 0.7rem;
+    color:#7e7e7e;
 }
 
 .footerBottomLeft a {
     margin-right: 1.5rem;
+}
 
+.footerNav a:hover {
+    color: white;
+}
+
+.footerBottomRight {
+    column-gap: 0.8em;
+    row-gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.footerBottomRight a {
+    color:#7e7e7e;
+}
+
+.footerBottomRight a:hover{
+    color: white;
+}
+
+.footerBottomRight div {
+    display: flex;
+    justify-content: space-between;
 }
