@@ -365,17 +365,31 @@ nav ul li{
     margin: 2rem;
     margin-top: 4rem;
 }
+
 .membership h1{
     font-weight: normal;
     font-size: 24px;
+    margin-bottom: 1rem;
 }
 .membership .imgSlider{
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 1rem;
+    justify-content: center;
 }
+
 .membership img{
-    margin: 1rem;
+    margin: 0.5rem;
+    width: 20rem;
+}
+
+.membership figcaption {
+    color:#757575;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.membership figure {
+    text-align: center;
 }
 
 /*---------- Bottom Nav ----------*/
