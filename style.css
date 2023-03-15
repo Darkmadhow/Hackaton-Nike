@@ -381,13 +381,12 @@ nav ul li{
 /*---------- Bottom Nav ----------*/
 /*---------- Footer ----------*/
 footer {
+    display:flex;
     background-color: #111;
-    box-sizing: border-box;
     padding-left: 10rem;
     padding-right: 10rem;
     padding-top: 2em;
     padding-bottom: 2em;
-
 }
 footer nav {
     display: flex;
